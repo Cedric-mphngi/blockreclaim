@@ -3,69 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BlockReclaim | Advanced Crypto Recovery & Insights</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <title>BlockReclaim</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="BlockReclaim Logo" style="max-width: 180px; margin-bottom: 10px;" />
+  <!-- Live Ticker -->
+  <div class="ticker">
+    <div id="ticker-content"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
     <h1>BlockReclaim</h1>
-    <p>Managing 3000+ Client Portfolios | 95% Success Rate</p>
-  </header>
-  <main>
-    <section id="market">
-      <h2>Live Market Data</h2>
-      <div id="crypto-prices">Loading crypto data...</div>
-      <div id="stock-prices">Loading stock data...</div>
-    </section>
-    <section id="distribution">
-      <h2>Client Distribution</h2>
-      <canvas id="geoChart" width="400" height="200"></canvas>
-    </section>
-    <section>
-      <h2>Advanced Trading & Recovery Solutions</h2>
-      <div class="features">
-        <div class="feature"><h3><i class="fas fa-sliders-h"></i> Strategy Builder</h3><p>Create and simulate complex recovery and trading strategies with ease.</p></div>
-        <div class="feature"><h3><i class="fas fa-chart-line"></i> Real-Time Analytics</h3><p>Access live volatility, trends, and risk indicators to make smart decisions.</p></div>
-        <div class="feature"><h3><i class="fas fa-puzzle-piece"></i> Model Portfolios</h3><p>Choose from curated crypto investment portfolios to match your goals.</p></div>
-        <div class="feature"><h3><i class="fas fa-lock"></i> Secure Client Portal</h3><p>Monitor assets, progress, and security status in one intuitive dashboard.</p></div>
+    <p>Managing over 3000+ portfolios valued above $100,000 with 95% success rate.</p>
+  </section>
+
+  <!-- Geographic Reach -->
+  <section class="map-section">
+    <h2>Global Client Distribution</h2>
+    <img src="world-map.png" alt="Client Map" class="world-map"/>
+    <ul class="stats">
+      <li>25% Portugal</li>
+      <li>15% South Africa</li>
+      <li>7% Pakistan</li>
+      <li>53% Rest of World</li>
+    </ul>
+  </section>
+
+  <!-- Packages -->
+  <section class="packages">
+    <h2>Our Packages</h2>
+    <div class="package-grid">
+      <div class="package-card">
+        <h3>Starter</h3>
+        <p>$500 - $5,000</p>
+        <p>Basic portfolio recovery & consultation</p>
       </div>
-    </section>
-    <section>
-      <h2>Investment Plans</h2>
-      <div class="plans">
-        <div class="plan"><h3>Bronze</h3><p>$100+ | 1.5–3% daily profit</p></div>
-        <div class="plan"><h3>Silver</h3><p>$500+ | 3–5% daily profit</p></div>
-        <div class="plan"><h3>Gold</h3><p>$1,000+ | 5–7% daily profit</p></div>
-        <div class="plan"><h3>Platinum</h3><p>$5,000+ | 10% daily profit</p></div>
+      <div class="package-card">
+        <h3>Professional</h3>
+        <p>$5,001 - $25,000</p>
+        <p>Advanced recovery + ongoing support</p>
       </div>
-    </section>
-    <section>
-      <h2>Client Testimonials</h2>
-      <div class="testimonial">“BlockReclaim transformed my crypto loss into new wealth — secure, fast, and professional.”<br><em>- Sarah M., London</em></div>
-      <div class="testimonial">“The dashboard, support, and results feel like trading on a space station.”<br><em>- Joel K., Dubai</em></div>
-    </section>
-    <section>
-      <h2>Award-Winning Platform & Services</h2>
-      <div class="features">
-        <div class="feature"><img src="award1.png" alt="Award 1" style="max-width: 80px;"><h3>StockBrokers.com 2025</h3><p>#1 Professional Trading<br>#1 International Trading</p></div>
-        <div class="feature"><img src="award2.png" alt="Award 2" style="max-width: 80px;"><h3>Nerdwallet Award</h3><p>Best Online Broker<br>for Advanced Traders</p></div>
-        <div class="feature"><img src="award3.png" alt="Award 3" style="max-width: 80px;"><h3>Barron's 2023</h3><p>#1 Best Online Broker<br>5 out of 5 stars</p></div>
-        <div class="feature"><img src="award4.png" alt="Award 4" style="max-width: 80px;"><h3>Investopedia 2024</h3><p>Best for Advanced Traders</p></div>
-        <div class="feature"><img src="award5.png" alt="Award 5" style="max-width: 80px;"><h3>BrokerChooser 2025</h3><p>Best Online Broker</p></div>
+      <div class="package-card">
+        <h3>Elite</h3>
+        <p>$25,001+</p>
+        <p>Full asset tracking, legal support & VIP service</p>
       </div>
-    </section>
-    <section id="article">
-      <h2>Global Impact of BlockReclaim</h2>
-      <p>At BlockReclaim, our commitment to excellence has led us to survey over 10,000 clients worldwide. Our presence spans across South Africa (15%), Pakistan (7%), Portugal (25%), and other regions, showcasing our global reach. Managing over 3,000 client portfolios exceeding $100,000, we've achieved a 95% success rate, reflecting our dedication to client satisfaction and financial growth.</p>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 BlockReclaim. All rights reserved.</p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <script src="script.js"></script>
 </body>
 </html>
