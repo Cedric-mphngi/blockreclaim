@@ -1,127 +1,172 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BlockReclaim | Global Crypto Recovery & Investment</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>BlockReclaim | Futuristic Crypto Recovery & Investment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      background-attachment: fixed;
+    }
+    header {
+      background: #000000d1;
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8em;
+      color: #ffd700;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #ddd;
+      max-width: 700px;
+      margin: 10px auto 0;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2em;
+      color: #ffcc00;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+    }
+    .plans, .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .plan, .feature {
+      background: rgba(28,28,43,0.8);
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 217, 0, 0.15);
+    }
+    .plan h3, .feature h3 {
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+    .plan p, .feature p {
+      color: #e0e0e0;
+    }
+    .testimonial {
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px 0;
+      font-style: italic;
+    }
+    .cta-button {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta-button a {
+      background: #ffd700;
+      color: #000;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta-button a:hover {
+      background: #e6c200;
+    }
+    footer {
+      background: #0a0a0a;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-  <div class="ticker">
-    <div id="ticker-content">Loading market data...</div>
+
+<header>
+  <img src="logo.png" alt="BlockReclaim Logo"/>
+  <h1>BlockReclaim</h1>
+  <p>Elite Crypto Asset Recovery & High-Yield Investment Strategies with Cutting-Edge Technology</p>
+</header>
+
+<section>
+  <h2>Advanced Trading & Recovery Solutions</h2>
+  <div class="features">
+    <div class="feature"><h3><i class="fas fa-sliders-h"></i> Strategy Builder</h3><p>Create and simulate complex recovery and trading strategies with ease.</p></div>
+    <div class="feature"><h3><i class="fas fa-chart-line"></i> Real-Time Analytics</h3><p>Access live volatility, trends, and risk indicators to make smart decisions.</p></div>
+    <div class="feature"><h3><i class="fas fa-puzzle-piece"></i> Model Portfolios</h3><p>Choose from curated crypto investment portfolios to match your goals.</p></div>
+    <div class="feature"><h3><i class="fas fa-lock"></i> Secure Client Portal</h3><p>Monitor assets, progress, and security status in one intuitive dashboard.</p></div>
   </div>
+</section>
 
-  <header class="hero">
-    <div class="hero-overlay"></div>
-    <img src="logo.png" alt="BlockReclaim Logo" class="logo" style="max-width: 180px;" />
-    <h1>BlockReclaim</h1>
-    <p>Crypto Investment & Recovery | HQ: Toronto, Canada</p>
-  </header>
+<section>
+  <h2>Investment Plans</h2>
+  <div class="plans">
+    <div class="plan"><h3>Bronze</h3><p>$100+ | 1.5–3% daily profit</p></div>
+    <div class="plan"><h3>Silver</h3><p>$500+ | 3–5% daily profit</p></div>
+    <div class="plan"><h3>Gold</h3><p>$1,000+ | 5–7% daily profit</p></div>
+    <div class="plan"><h3>Platinum</h3><p>$5,000+ | 10% daily profit</p></div>
+  </div>
+</section>
 
-  <section class="stats-hero">
-    <h2>Our Global Impact</h2>
-    <div class="counter-grid">
-      <div class="counter-card"><h3><span id="clients">0</span>+</h3><p>Clients Served</p></div>
-      <div class="counter-card"><h3><span id="portfolios">0</span>+</h3><p>Active Portfolios</p></div>
-      <div class="counter-card"><h3><span id="countries">0</span>+</h3><p>Countries Reached</p></div>
-      <div class="counter-card"><h3><span id="success">0</span>%</h3><p>Success Rate</p></div>
+<section>
+  <h2>Client Testimonials</h2>
+  <div class="testimonial">“BlockReclaim transformed my crypto loss into new wealth — secure, fast, and professional.”<br><em>- Sarah M., London</em></div>
+  <div class="testimonial">“The dashboard, support, and results feel like trading on a space station.”<br><em>- Joel K., Dubai</em></div>
+  <div class="cta-button"><a href="#contact">Get Started Now</a></div>
+
+<section>
+  <h2>Award-Winning Platform & Services</h2>
+  <div class="features">
+    <div class="feature">
+      <img src="award1.png" alt="StockBrokers.com Award" style="max-width: 80px; margin-bottom: 10px;">
+      <h3>StockBrokers.com 2025</h3>
+      <p>#1 Professional Trading<br>#1 International Trading</p>
     </div>
-  </section>
-
-  <section class="about">
-    <h2>About Us</h2>
-    <p>BlockReclaim is a multinational crypto investment and recovery firm headquartered in Toronto, Canada, with offices in the UK and Thailand. We have proudly served 10,000+ clients across 26+ countries with a 98% success rate.</p>
-  </section>
-
-  <section class="recovery">
-    <h2>Crypto Recovery Services</h2>
-    <p>We help individuals trace and reclaim lost or inaccessible crypto funds. Just $100 upfront covers legal documentation and tracing tools. Once recovered, we charge a 2% success fee—only after funds are returned.</p>
-  </section>
-
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Advanced Crypto Investment Portfolios</li>
-      <li>Global Crypto Asset Recovery</li>
-      <li>24/7 Portfolio Management Support</li>
-      <li>Legal Documentation & Compliance Assistance</li>
-    </ul>
-  </section>
-
-  <section class="packages">
-    <h2>Investment Plans</h2>
-    <div class="plan-grid">
-      <div class="plan-card">
-        <h3>Bronze Plan</h3>
-        <p><strong>Investment:</strong> $100+</p>
-        <p><strong>Daily Profit:</strong> 1.5% – 3%</p>
-        <p>Perfect for beginners looking to step into the world of crypto with daily monitored profits and easy withdrawals.</p>
-      </div>
-      <div class="plan-card">
-        <h3>Silver Plan</h3>
-        <p><strong>Investment:</strong> $500+</p>
-        <p><strong>Daily Profit:</strong> 3% – 5%</p>
-        <p>Includes enhanced performance management and priority support, delivering consistent growth and higher flexibility.</p>
-      </div>
-      <div class="plan-card">
-        <h3>Gold Plan</h3>
-        <p><strong>Investment:</strong> $1,000+</p>
-        <p><strong>Daily Profit:</strong> 5% – 7%</p>
-        <p>Designed for committed investors, offering executive portfolio optimization and monthly review sessions with our experts.</p>
-      </div>
-      <div class="plan-card">
-        <h3>Platinum Plan</h3>
-        <p><strong>Investment:</strong> $5,000+</p>
-        <p><strong>Daily Profit:</strong> 10%</p>
-        <p>White-glove service for high-net-worth individuals. Includes exclusive insights, direct access to portfolio managers, and ultra-fast recovery support.</p>
-      </div>
+    <div class="feature">
+      <img src="award2.png" alt="Nerdwallet Award" style="max-width: 80px; margin-bottom: 10px;">
+      <h3>Nerdwallet Award</h3>
+      <p>Best Online Broker<br>for Advanced Traders</p>
     </div>
-  </section>
-
-  <section class="trust-badges">
-    <h2>Trusted By Thousands</h2>
-    <div class="badges">
-      <img src="award1.png" alt="Certified Broker">
-      <img src="award2.jpeg" alt="Global Excellence">
-      <img src="award3.png" alt="Top Performer">
+    <div class="feature">
+      <img src="award3.png" alt="Barron's Award" style="max-width: 80px; margin-bottom: 10px;">
+      <h3>Barron's 2023</h3>
+      <p>#1 Best Online Broker<br>5 out of 5 stars</p>
     </div>
-  </section>
+    <div class="feature">
+      <img src="award4.png" alt="Investopedia Award" style="max-width: 80px; margin-bottom: 10px;">
+      <h3>Investopedia 2024</h3>
+      <p>Best for Advanced Traders</p>
+    </div>
+    <div class="feature">
+      <img src="award5.png" alt="BrokerChooser Award" style="max-width: 80px; margin-bottom: 10px;">
+      <h3>BrokerChooser 2025</h3>
+      <p>Best Online Broker</p>
+    </div>
+  </div>
+</section>
 
-  <section class="map-section">
-    <h2>Global Client Reach</h2>
-    <p>10,000+ satisfied clients worldwide</p>
-    <img src="World_map_-_low_resolution.svg" alt="Client Map" class="world-map" />
-    <ul class="stats">
-      <li>25% Portugal</li>
-      <li>15% South Africa</li>
-      <li>7% Pakistan</li>
-      <li>53% Others</li>
-    </ul>
-  </section>
+<footer>
+  <p>&copy; 2025 BlockReclaim. All rights reserved.</p>
+</footer>
 
-  <section class="get-started">
-    <h2>Get Started Now</h2>
-    <form action="https://formsubmit.co/support@blockreclaim.icu" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="text" name="contact" placeholder="Your Contact Number" required>
-      <button type="submit">Submit Information</button>
-    </form>
-  </section>
-
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Email:</strong> support@blockreclaim.icu</p>
-    <p><strong>WhatsApp:</strong> +44 7537 184804</p>
-    <p><strong>Locations:</strong> Canada (HQ), UK, Thailand</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 BlockReclaim. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
