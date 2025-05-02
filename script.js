@@ -1,23 +1,30 @@
-const ticker = document.getElementById("ticker-content");
 
-async function fetchPrices() {
-  try {
-    const cryptoRes = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,dogecoin&vs_currencies=usd");
-    const stockRes = await fetch("https://api.twelvedata.com/price?symbol=AAPL,TSLA,GOOGL&apikey=demo");
+// Live Crypto Data from CoinGecko
+fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd")
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("crypto-prices").innerHTML = `
+      <p>Bitcoin: $${data.bitcoin.usd}</p>
+      <p>Ethereum: $${data.ethereum.usd}</p>
+    `;
+  });
 
-    const cryptoData = await cryptoRes.json();
-    const stockData = await stockRes.json();
+// Dummy Stock Data (Alpha Vantage needs a real API key)
+document.getElementById("stock-prices").innerHTML = `
+  <p>Apple (AAPL): $170.50</p>
+  <p>Google (GOOGL): $2823.10</p>
+`;
 
-    let tickerText = `Crypto: BTC $${cryptoData.bitcoin.usd} | ETH $${cryptoData.ethereum.usd} | DOGE $${cryptoData.dogecoin.usd} || `;
-
-    tickerText += `Stocks: AAPL $${stockData.AAPL.price} | TSLA $${stockData.TSLA.price} | GOOGL $${stockData.GOOGL.price}`;
-
-    ticker.textContent = tickerText;
-  } catch (error) {
-    ticker.textContent = "Error loading market data.";
-    console.error(error);
+// Chart.js for client distribution
+const ctx = document.getElementById('geoChart').getContext('2d');
+new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: ['South Africa', 'Pakistan', 'Portugal', 'Others'],
+    datasets: [{
+      label: 'Client Distribution',
+      data: [15, 7, 25, 53],
+      backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#4bc0c0']
+    }]
   }
-}
-
-fetchPrices();
-setInterval(fetchPrices, 30000); // update every 30 seconds
+});
